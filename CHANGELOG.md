@@ -8,16 +8,36 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
 
 ##### Enhancements
 
-* Add `visionOS` as a new platform. 
-  [Gabriel Donadel](https://github.com/gabrieldonadel)
-  [#11965](https://github.com/CocoaPods/CocoaPods/pull/11965)
+* None.  
 
 ##### Bug Fixes
 
-* Use safe_load during custom YAML config loading.  
+* Fix a crash when running with activesupport 7.1.0.  
+  [MCanhisares](https://github.com/MCanhisares)
+  [#12081](https://github.com/CocoaPods/CocoaPods/issues/12081)
+
+
+## 1.13.0 (2023-09-22)
+
+##### Enhancements
+
+* Add `visionOS` as a new platform.  
+  [Gabriel Donadel](https://github.com/gabrieldonadel)
+  [#11965](https://github.com/CocoaPods/CocoaPods/pull/11965)
+
+* Extend `script_phase` DSL to support `always_out_of_date` attribute.  
+  [Alvar Hansen](https://github.com/alvarhansen)
+  [#12055](https://github.com/CocoaPods/CocoaPods/pull/12055)
+
+##### Bug Fixes
+
+* Use `safe_load` during custom YAML config loading.  
   [Dimitris Koutsogiorgas](https://github.com/dnkoutso)
   [#11974](https://github.com/CocoaPods/CocoaPods/pull/11974)
 
+* Xcode 15 fix: Replace `DT_TOOLCHAIN_DIR` with `TOOLCHAIN_DIR` when generating script.  
+  [Marcus Wu](https://github.com/marcuswu0814)
+  [#12009](https://github.com/CocoaPods/CocoaPods/pull/12009)
 
 ## 1.12.1 (2023-04-18)
 
